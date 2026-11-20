@@ -1,0 +1,49 @@
+@charset "UTF-8";
+	h1 {
+		background-color: green;
+		letter-spacing: 0.5rem;
+		color: brown;
+		text-align: center;
+	}
+	.apartado-uno {
+				text-align: right;
+				font-size: 14px;
+	}
+	
+	.apartado-dos {
+				
+					text-align: justify;
+					padding: 1rem;
+	}
+	
+	.apartado-tres {
+					text-align: justify;
+					padding: 1rem;
+	}
+	
+	.container {  display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr;
+ gap: 0px 0px;
+ grid-auto-flow: row;
+ grid-template-areas:
+   "apartado-dos apartado-tres imagen";
+	}
+	.apartado-dos { grid-area: apartado-dos; }
+	.apartado-tres { grid-area: apartado-tres; }
+	.imagen { grid-area: imagen; }
+	
+	table {
+			background-color: darkblue;
+			color: white;
+			width: 50%;
+			margin: 30px auto;
+			padding: 10px;
+			border-collapse: collapse;
+			
+	}
+	
+	th:hover, td:hover {
+						background-color: white;
+						color: red;
+	} 
